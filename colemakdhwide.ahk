@@ -21,6 +21,7 @@ SC025::n
 SC026::e
 SC027::i
 +SC027::I
+CapsLock & SC027::I
 SC028::o
 SC056::z
 SC02c::x
@@ -51,30 +52,33 @@ SC021 & SC034::8
 SC021 & SC035::9
 SC021 & SC028::0
 
-SC020 & SC018::ü
-SC020 & SC027::ı
-SC020 & SC028::ö
-SC020 & SC01F::ç
-SC020 & SC022::ğ
-SC020 & SC021::ş
+SC02B::RShift
 
-RAlt::RShift
-
-SC028 & SC014::=
-SC028 & SC013::)
-SC028 & SC012::(
-SC028 & SC011::&
-SC028 & SC010:::
-SC028 & SC022::%
-SC028 & SC021::!
-SC028 & SC020::"
-SC028 & SC01F::?
-SC028 & SC01E::'
-SC028 & SC02F::#
-SC028 & SC02E::-
-SC028 & SC02D::_
-SC028 & SC02C::@
-SC028 & SC056::*
+SC025 & SC014::=
+SC025 & SC013::)
+SC025 & SC012::(
+SC025 & SC011::&
+SC025 & SC010:::
+SC025 & SC022::%
+SC025 & SC021::!
+SC025 & SC020::"
+SC025 & SC01F::?
+SC025 & SC01E::'
+SC025 & SC02F::#
+SC025 & SC02E::-
+SC025 & SC02D::_
+SC025 & SC02C::@
+SC025 & SC056::*
+SC025 & SC018::+
+SC025 & SC019::$
+SC025 & SC01A::~
+SC025 & SC01B::`
+SC025 & SC026::[
+SC025 & SC027::]
+SC025 & SC028::Send "{{}"
+SC025 & SC02B::Send "{}}"
+SC025 & SC034::<
+SC025 & SC035::>
 
 SC01F & SC017::F1
 SC01F & SC018::F2
@@ -100,18 +104,11 @@ Suspend()
 }
 #SuspendExempt false
 
-#HotIf GetKeyState("Numlock", "T")
-{
-    SC010::Send("{sc033}")
-    +SC010::Send("+{sc033}")
-    SC011::Send("{sc01b}")
-    +SC011::Send("+{sc01b}")
-    SC02C::Send("{sc01a}")
-    +SC02C::Send("+{sc01a}")
-    SC01A::Send("{sc027}")
-    +SC01A::Send("+{sc027}")
-    SC01B::Send("{sc034}")
-    +SC01B::Send("+{sc034}")
-    SC02B::Send("{sc017}")
-    +SC02B::Send("+{sc017}")
-}
+RAlt & SC028:: Send("{SC033}")
+RAlt & SC018:: Send("{SC01B}")
+RAlt & SC020:: Send("{SC027}")
+RAlt & SC027:: Send("{SC017}")
+RAlt & SC02D:: Send("{SC034}")
+RAlt & SC022:: Send("{SC01A}")
+
+
