@@ -36,4 +36,5 @@ SC01B::/
 +SC01B::\
 SC03A::backspace
 SC02B::'
-SC028::RShift
+SC02F & SC032::CapsLock
+SC02B::RShift
