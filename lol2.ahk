@@ -36,5 +36,4 @@ SC01B::/
 +SC01B::\
 SC03A::backspace
 SC02B::'
-
-RAlt::RShift
+SC028::RShift
